@@ -1,1 +1,4 @@
-execute unless block ^ ^ ^ #amefer:amethyst_buds run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Tags:["AmeferFertilizer"],ShowArms:1b}
+execute align xyz if block ~ ~ ~ minecraft:small_amethyst_bud positioned ~0.5 ~ ~0.5 unless entity @e[tag=AmeferFertilizer,distance=..0.9] run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Tags:["AmeferFertilizer","AmeferInSmall"],ShowArms:1b,Small:1b,NoGravity:1b}
+execute align xyz if block ~ ~ ~ minecraft:medium_amethyst_bud positioned ~0.5 ~ ~0.5 unless entity @e[tag=AmeferFertilizer,distance=..0.9] run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Tags:["AmeferFertilizer","AmeferInMedium"],ShowArms:1b,Small:1b,NoGravity:1b}
+execute align xyz if block ~ ~ ~ minecraft:large_amethyst_bud positioned ~0.5 ~ ~0.5 unless entity @e[tag=AmeferFertilizer,distance=..0.9] run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Tags:["AmeferFertilizer","AmeferInLarge"],ShowArms:1b,Small:1b,NoGravity:1b}
+execute unless block ~ ~ ~ #amefer:amethyst_buds positioned ^ ^ ^0.1 if entity @p[distance=..5] run function amefer:summon/armor_stand
