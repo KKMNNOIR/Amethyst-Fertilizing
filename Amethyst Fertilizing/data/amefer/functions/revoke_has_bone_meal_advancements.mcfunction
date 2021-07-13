@@ -1,1 +1,0 @@
-execute as @a[predicate=amefer:has_except_bone_meal] run advancement revoke @s only amefer:has_bone_meals
