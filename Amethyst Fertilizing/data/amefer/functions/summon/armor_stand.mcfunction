@@ -1,0 +1,1 @@
+execute unless block ^ ^ ^ #amefer:amethyst_buds run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Tags:["AmeferFertilizer"],ShowArms:1b}

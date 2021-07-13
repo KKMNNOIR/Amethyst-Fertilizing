@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "has_bone_meals": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:alternative",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {"equipment": {"mainhand": {"items": ["minecraft:bone_meal"]}}}
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {"equipment": {"offhand": {"items": ["minecraft:bone_meal"]}}}
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {"function": "amefer:summon_item_frames"}
+}

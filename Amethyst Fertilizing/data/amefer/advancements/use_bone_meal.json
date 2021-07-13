@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "used_bone_meal": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:item_frame"
+                },
+                "item": {"items": ["minecraft:bone_meal"]}
+            }
+        }
+    },
+    "rewards": {"function": "amefer:grow/grow_stage"}
+}

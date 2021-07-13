@@ -1,0 +1,18 @@
+{
+    "condition": "inverted",
+    "term": {
+        "condition": "alternative",
+        "terms": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {"equipment": {"mainhand": {"items": ["bone_meal"]}}}
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {"equipment": {"offhand": {"items": ["bone_meal"]}}}
+            }
+        ]
+    }
+}
