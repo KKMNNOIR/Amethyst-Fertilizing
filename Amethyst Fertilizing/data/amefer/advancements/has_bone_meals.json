@@ -5,23 +5,12 @@
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:alternative",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {"equipment": {"mainhand": {"items": ["minecraft:bone_meal"]}}}
-                            },
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {"equipment": {"offhand": {"items": ["minecraft:bone_meal"]}}}
-                            }
-                        ]
+                        "condition": "reference",
+                        "name": "amefer:has_bone_meal"
                     }
                 ]
             }
         }
     },
-    "rewards": {"function": "amefer:summon_item_frames"}
+    "rewards": {"function": "amefer:summon/ready"}
 }
